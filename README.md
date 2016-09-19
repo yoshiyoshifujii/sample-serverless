@@ -71,3 +71,20 @@ test method success.
 [success] ...
 ```
 
+# curl
+
+```sh
+$ curl -i -X GET https://<Rest Api ID>.execute-api.<Region Name>.amazonaws.com/test/hellos -H "Authorization:hoge"
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 21
+Connection: keep-alive
+Date: Mon, 19 Sep 2016 11:47:36 GMT
+x-amzn-RequestId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+X-Cache: Miss from cloudfront
+Via: 1.1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: xxxxxxx-xxxxxxxxxxxxxxxxxx_xxxxxxxx-xxxxxxxxxxxxxxxxxx==
+
+{"message":"World!!"}%
+```
+
